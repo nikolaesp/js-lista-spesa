@@ -11,7 +11,7 @@ arrayspesa.forEach((item)=>{
   let li = document.createElement("li");
   li.innerText = item;
   list.appendChild(li);
-})                       //crea list items
+})                       //crea list items con valore di nostra array lista
 
 
 
