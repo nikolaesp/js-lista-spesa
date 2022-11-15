@@ -4,3 +4,6 @@ while(h<arrayspesa.length){
     console.log(arrayspesa[h++]);
 }
 
+for(let i=0;i<arrayspesa.length;i++){
+    console.log(arrayspesa[i]);
+}
