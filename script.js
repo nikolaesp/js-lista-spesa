@@ -26,8 +26,9 @@ li.setAttribute("id","elimina"+i);
 
     
     btndel.addEventListener('click', function(){
-        btndel.parentNode.parentNode.removeChild(element);
-
+        btndel.parentNode.parentNode.removeChild();
+      
+      
         
         let element = document.getElementById("elimina1");
         console.log("------"+element.id+" - - - - - ");
