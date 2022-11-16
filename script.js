@@ -6,12 +6,34 @@ while(h<arrayspesa.length){
 console.log(`\n\n`);
 
 let list = document.getElementById("listaspesa"); //crea una unorderd list
-  
+  let i =0;
 arrayspesa.forEach((item)=>{
   let li = document.createElement("li");
   li.innerText = item;
-  list.appendChild(li);
-})                       //crea list items con valore di nostra array lista
+  let button = document.createElement("button");
+button.innerHTML = "Elimina";
+li.appendChild(button);
+li.setAttribute("id","elimina"+i);
+  list.appendChild(li);  
+  i++;
+});                       //crea list items con valore di nostra array lista
+
+
+    
+    let btndel = document.getElementById("elimina1");
+
+
+    
+    btndel.addEventListener('click', function(){
+        btndel.parentNode.parentNode.removeChild(element);
+
+        /*
+        let element = document.getElementById("elimina1");
+        console.log("------"+element.id+" - - - - - ");
+        element.parentNode.parentNode.parentElement.removeChild();*/
+    
+    });
+
 
 
 
@@ -20,6 +42,8 @@ arrayspesa.forEach((item)=>{
 let additembtn = document.getElementById("btnadditem");
 
 additembtn.addEventListener('click',function(){
+
+    
     let item = document.getElementById("inputitem").value;
     arrayspesa.push(item);
     let li = document.createElement("li");
