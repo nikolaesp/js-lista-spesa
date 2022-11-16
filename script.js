@@ -10,6 +10,7 @@ let list = document.getElementById("listaspesa"); //crea una unorderd list
 arrayspesa.forEach((item)=>{
   let li = document.createElement("li");
   li.innerText = item;
+  arrayspesa.push(item);
   let button = document.createElement("button");
 button.innerHTML = "Elimina";
 li.appendChild(button);
@@ -27,10 +28,10 @@ li.setAttribute("id","elimina"+i);
     btndel.addEventListener('click', function(){
         btndel.parentNode.parentNode.removeChild(element);
 
-        /*
+        
         let element = document.getElementById("elimina1");
         console.log("------"+element.id+" - - - - - ");
-        element.parentNode.parentNode.parentElement.removeChild();*/
+        element.parentNode.parentNode.parentElement.removeChild();
     
     });
 
